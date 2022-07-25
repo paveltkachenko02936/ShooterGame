@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7DA2A00C-24F3-36C7-9FD7-245976089468}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>external</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\projects\ShooterGame\ShooterGame\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">external.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\projects\ShooterGame\ShooterGame\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">external.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\projects\ShooterGame\ShooterGame\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">external.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\projects\ShooterGame\ShooterGame\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">external.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\projects\ShooterGame\ShooterGame\cocos2d\external\recast\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\tinyxml2\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxhash\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\xxtea\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\clipper\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\edtaa3func\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\ConvertUTF\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\poly2tri\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\md5\..;D:\projects\ShooterGame\ShooterGame\cocos2d\external\unzip\.;D:\projects\ShooterGame\ShooterGame\cocos2d\external\Box2D\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\chipmunk\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\freetype2\include\win32\freetype2;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\bullet\include\bullet;D:\projects\ShooterGame\ShooterGame\cocos2d\external\jpeg\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\openssl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\uv\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\webp\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\websockets\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\curl\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\png\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\gles\include\OGLES;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\icon\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\MP3Decoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OggDecoder\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\win32-specific\OpenalSoft\include;D:\projects\ShooterGame\ShooterGame\cocos2d\external\glfw3\include\win32;D:\projects\ShooterGame\ShooterGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\ShooterGame\ShooterGame\cocos2d\external\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule D:/projects/ShooterGame/ShooterGame/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/ShooterGame/ShooterGame -BD:/projects/ShooterGame/ShooterGame --check-stamp-file D:/projects/ShooterGame/ShooterGame/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\projects\ShooterGame\ShooterGame\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule D:/projects/ShooterGame/ShooterGame/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/ShooterGame/ShooterGame -BD:/projects/ShooterGame/ShooterGame --check-stamp-file D:/projects/ShooterGame/ShooterGame/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\projects\ShooterGame\ShooterGame\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule D:/projects/ShooterGame/ShooterGame/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/ShooterGame/ShooterGame -BD:/projects/ShooterGame/ShooterGame --check-stamp-file D:/projects/ShooterGame/ShooterGame/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\projects\ShooterGame\ShooterGame\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule D:/projects/ShooterGame/ShooterGame/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/ShooterGame/ShooterGame -BD:/projects/ShooterGame/ShooterGame --check-stamp-file D:/projects/ShooterGame/ShooterGame/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\projects\ShooterGame\ShooterGame\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\projects\ShooterGame\ShooterGame\cocos2d\external\empty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\ZERO_CHECK.vcxproj">
+      <Project>{B63181D4-E59C-3B1C-8014-6E8571EE5F01}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{BA060D78-A154-34A7-990F-D7DA30934674}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{1C5D2FC1-1214-31E7-A990-184C3D9F3E87}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{53CD6C78-C24B-3AC8-88B6-751AE50F2E4F}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\md5\ext_md5.vcxproj">
+      <Project>{CC866FAF-1FF6-341C-9659-F448C919AAEE}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{4711A4D6-6B2C-3FF5-81A2-2248C679D7FA}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\recast\ext_recast.vcxproj">
+      <Project>{3FE82225-59F7-3765-84CF-25004D90492F}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{479564D1-6FF6-330C-B915-F32EC22566C8}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{707ECB92-899B-323C-8251-002BABC3155E}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{4B7870D7-FD89-3FF3-A621-D5F88B392D14}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\projects\ShooterGame\ShooterGame\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{1C2E6F33-251E-3576-8645-CCF0ABEB08DB}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
