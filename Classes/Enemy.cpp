@@ -11,7 +11,7 @@ Enemy::Enemy(const GameObjectSettings* data) :GameObject(data)
 	const Size& contentSize = getContentSize();
 
 	float posX = visibleSize.width + contentSize.width;
-	float posY = rand() % (int)visibleSize.height;
+	float posY = rand() % static_cast<int>(visibleSize.height - contentSize.height);
 
 	setPosition(posX, posY);
 

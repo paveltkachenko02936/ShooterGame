@@ -27,17 +27,16 @@
 		},
 		{
 			"type": "enemy1",
-			"speed": 80,
+			"speed": 110,
 			"power": 10,
 			"health": 10,
 			"image":"enemy1",
 			"spawnChance": 0.5,
-			"isEnemy": true,
-			"ignoreUserWeapon": true
+			"isEnemy": true
 		},
 		{
 			"type": "enemy2",
-			"speed": 100,
+			"speed": 80,
 			"power": 30,
 			"health": 30,
 			"image":"enemy2",

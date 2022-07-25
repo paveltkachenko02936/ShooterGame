@@ -2,7 +2,6 @@
 #include <string>
 
 class GameObject;
-class GameObjectSettings;
 
 class GameObjectsFactory final
 {
