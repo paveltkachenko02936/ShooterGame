@@ -4,7 +4,7 @@
 #include <map>
 #include "GameSettings.h"
 
-class SpawnTimer
+class SpawnTimer final
 {
 public:
 	explicit SpawnTimer(const TimerSettings* settings);

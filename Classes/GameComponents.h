@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class GameComponents
+class GameComponents final
 {
 public:
 	static GameComponents* getInstance();
