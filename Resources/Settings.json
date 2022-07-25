@@ -1,0 +1,55 @@
+{
+	"timers":
+	[
+		{
+			"time": 20,
+			"spawnInterval": 3
+		},
+		{
+			"time": 20,
+			"spawnInterval": 2
+		},
+		{
+			"time": 20,
+			"spawnInterval": 1
+		},
+		{
+			"spawnInterval": 0.5
+		}
+	],
+	"objects":
+	[
+		{
+			"type": "player",
+			"speed": 0,
+			"health": 100,
+			"image":"hero"
+		},
+		{
+			"type": "enemy1",
+			"speed": 80,
+			"power": 10,
+			"health": 10,
+			"image":"enemy1",
+			"spawnChance": 0.5,
+			"isEnemy": true,
+			"ignoreUserWeapon": true
+		},
+		{
+			"type": "enemy2",
+			"speed": 100,
+			"power": 30,
+			"health": 30,
+			"image":"enemy2",
+			"spawnChance": 0.3,
+			"isEnemy": true
+		},
+		{
+			"type": "rocket",
+			"speed": 100,
+			"power": 10,
+			"cooldown": 0.3,
+			"image": "rocket"
+		}
+	]
+}
